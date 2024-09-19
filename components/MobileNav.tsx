@@ -3,6 +3,7 @@ import { AlignJustify } from 'lucide-react';
 
 import Nav from '@/components/Nav';
 import Logo from '@/components/Logo';
+import Socials from './Socials';
 // import Socials from '@/components/Socials';
 
 const MobileNav = () => {
@@ -21,6 +22,7 @@ const MobileNav = () => {
                             underlineStyles='h-[2px] bg-primary w-full'
                         />
                     </div>
+                    <Socials containerStyles='flex gap-x-4' iconsStyles='text-2xl' />
                 </div>
             </SheetContent>
         </Sheet>
