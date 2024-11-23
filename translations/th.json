@@ -1,0 +1,13 @@
+{
+    "nav": {
+        "localeSelector": {
+            "message": ""
+        }
+    },
+    "views": {
+        "home": {
+            "title": "",
+            "body": ""
+        }
+    }
+}

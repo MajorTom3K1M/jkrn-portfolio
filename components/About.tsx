@@ -129,23 +129,25 @@ const About = () => {
                     {/* image */}
                     <div className='hidden xl:flex flex-1 relative'>
                         <ProfileImg
-                            containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative'
-                            imgSrc='/about/developer.png'
+                            // containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[443px] bg-no-repeat justify-self-center self-center relative'
+                            containerStyles='rounded-shape_light bg-[#FFEDDF] bg-no-repeat w-[505px] h-[443px] justify-self-center self-center relative'
+                            imageStyles='rounded-shape w-[505px] max-h-[443px] object-cover justify-self-center self-center'
+                            imgSrc='/about/profile.png'
                         />
                     </div>
                     {/* tabs */}
                     <div className='flex-1'>
                         <Tabs defaultValue='personal'>
-                            <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none'>
+                            <TabsList className='w-full grid xl:grid-cols-2 xl:max-w-[520px] xl:border dark:border-none'>
                                 <TabsTrigger value='personal'>
                                     Personal Info
                                 </TabsTrigger>
                                 <TabsTrigger value='qualifications'>
                                     Qualifications
                                 </TabsTrigger>
-                                <TabsTrigger value='skills'>
+                                {/* <TabsTrigger value='skills'>
                                     Skills
-                                </TabsTrigger>
+                                </TabsTrigger> */}
                             </TabsList>
                             {/* tabs content */}
                             <div className='text-lg mt-12 xl:mt-8'>
@@ -154,6 +156,12 @@ const About = () => {
                                     <div className='text-center xl:text-left'>
                                         <h3 className='h3 mb-4'>
                                             Unmatched Service Quality for Over 10 Years
+                                            {/* Committed to Outstanding Service for Over 10 Years */}
+                                            {/* Consistently Delivered Quality Service for Over 10 Years */}
+                                            {/* Dedicated to Providing Excellent Service for More Than a Decade */}
+                                            {/* Committed to Reliable Service Quality for Over 10 Years */}
+                                            {/* Maintaining High Standards of Service for Over a Decade */}
+                                            {/* Focused on Quality Service for More Than 10 Years */}
                                         </h3>
                                         <p className='subtitle max-w-xl mx-auto xl:mx-0'>
                                             I specialize in crafting intuitive websites with

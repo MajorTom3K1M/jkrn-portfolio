@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Outfit } from 'next/font/google';
-import './globals.css';
+
+import '@/app/globals.css';
 
 import Header from "@/components/Header";
- 
+
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import { Locale } from "@/i18n";
 
 const outfit = Outfit({ subsets: ['latin'] });
 
@@ -13,14 +15,24 @@ export const metadata: Metadata = {
   description: "Created By Jakkarin",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+type Props = Readonly<{
+  children: React.ReactNode;
+  params: {
+    locale: Locale;
+  };
+}>;
+
+
+export default async function RootLayout({
+  children,
+  params
+}: Props) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang={params.locale} suppressHydrationWarning>
       <body className={outfit.className}>
         <ThemeProvider attribute='class' defaultTheme='light'>
           <Header />
           {children}
-          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>

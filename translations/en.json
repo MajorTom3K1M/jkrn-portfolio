@@ -1,0 +1,13 @@
+{
+    "nav": {
+        "localeSelector": {
+            "message": "Choose a language."
+        }
+    },
+    "views": {
+        "home": {
+            "title": "Hello world!",
+            "body": ""
+        }
+    }
+}

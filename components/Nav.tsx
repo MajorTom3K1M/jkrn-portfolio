@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { motion } from "framer-motion";
+import { withLocalePath } from "@/lib/utils";
 
 interface NavProps {
     containerStyles: string;
@@ -24,7 +25,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }: NavProps) => {
             {links.map((link, index) => {
                 return (
                     <Link
-                        href={link.path}
+                        href={withLocalePath(path, link.path)}
                         key={index}
                         className={`capitalize ${linkStyles}`}
                     >
