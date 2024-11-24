@@ -1,13 +1,12 @@
 {
-    "nav": {
-        "localeSelector": {
-            "message": "Choose a language."
-        }
+    "hero": {
+        "title": "Fullstack Developer",
+        "name": "Jakkarin Mitvongsa",
+        "description": "I'm a fullstack developer with a passion for building beautiful and functional websites."
     },
-    "views": {
-        "home": {
-            "title": "Hello world!",
-            "body": ""
-        }
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects"
     }
 }

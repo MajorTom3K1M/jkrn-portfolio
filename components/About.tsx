@@ -12,6 +12,8 @@ import {
     Briefcase,
 } from 'lucide-react';
 
+import { Locale } from '@/i18n';
+
 interface Item {
     title: string;
     text?: string;
@@ -24,7 +26,11 @@ interface Item {
         name?: string;
         imgPath?: string;
     }>;
-}
+};
+
+type Props = {
+    locale: Locale;
+};
 
 const infoData = [
     {
@@ -114,7 +120,7 @@ const skillData = [
 ];
 
 
-const About = () => {
+const About = ({ locale }: Props) => {
     const getData = (arr: Item[], title: string): Item | undefined => {
         return arr.find((item) => item.title === title);
     };

@@ -1,6 +1,12 @@
 import Socials from "@/components/Socials";
 
-const Footer = () => {
+import { Locale } from "@/i18n";
+
+type Props = {
+    locale: Locale;
+};
+
+const Footer = ({ locale }: Props) => {
     return (
         <footer className='bg-secondary py-12'>
             <div className='container mx-auto'>

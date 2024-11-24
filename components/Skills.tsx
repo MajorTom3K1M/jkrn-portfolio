@@ -6,6 +6,11 @@ import {
     CardHeader,
     CardTitle
 } from '@/components/ui/card';
+import { Locale } from '@/i18n';
+
+type Props = {
+    locale: Locale;
+};
 
 const skillsData = [
     {
@@ -123,7 +128,7 @@ const skillsData = [
     }
 ]
 
-const Skills = () => {
+const Skills = ({ locale }: Props) => {
     return (
         <section className='mb-12 xl:mb-36'>
             <div className='container mx-auto'>
@@ -137,11 +142,11 @@ const Skills = () => {
                         return (
                             <Card
                                 // className='w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative'
-                                className='w-full max-w-[424px] h-[415px] flex flex-col items-center relative pt-16'
+                                className='w-full max-w-[424px] h-[415px] flex flex-col items-center relative pt-16 dark:bg-[#121212]'
                                 key={index}
                             >
                                 <CardHeader className='flex absolute -top-[60px]'>
-                                    <div className='text-primary w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center'>
+                                    <div className='text-primary w-[140px] h-[80px] bg-white dark:bg-[#121212] flex justify-center items-center'>
                                         {icon}
                                     </div>
                                 </CardHeader>

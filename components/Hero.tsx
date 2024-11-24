@@ -12,8 +12,16 @@ import ProfileImg from '@/components/ProfileImg';
 import Socials from '@/components/Socials';
 import Badge from '@/components/Badge';
 
+import { Locale } from '@/i18n';
+import { getTranslation } from '@/lib/i18n/getTranslation';
 
-const Hero = () => {
+type Props = {
+    locale: Locale;
+};
+
+const Hero = async ({ locale }: Props) => {
+    const translation = await getTranslation(locale);
+
     return (
         <section className='py-12 xl:py-24 min-h-[92vh] md:min-h-[87vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'>
             <div className='container mx-auto'>
@@ -25,7 +33,7 @@ const Hero = () => {
                             {/* Web Developer */}
                             FullStack Developer
                         </div>
-                        <h1 className='h1 mb-4'>Jakkarin Mitvongsa</h1>
+                        <h1 className='h1 mb-4'>{translation('hero.name')}</h1>
                         <p className='subtitle max-w-[490px] mx-auto xl:mx-0'>Brief description with insights into myself, my vocational journey, and what I engage in professionally.</p>
                         {/* buttons */}
                         <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>

@@ -1,21 +1,28 @@
 import About from '@/components/About';
 import Cta from '@/components/Cta';
 import Hero from '@/components/Hero';
-import Services from '@/components/Services';
 import Work from '@/components/Work';
 import Footer from '@/components/Footer';
 import Skills from '@/components/Skills';
 
-export default function Home() {
+import { Locale } from '@/i18n';
+
+type Props = {
+    params: {
+        locale: Locale;
+    };
+};
+
+export default async function Home({ params: { locale } }: Props) {
     return (
         <main>
-            <Hero />
-            <About />
-            <Skills />
+            <Hero locale={locale} />
+            <About locale={locale} />
+            <Skills locale={locale} />
             {/* <Services /> */}
-            <Work />
-            <Cta />
-            <Footer />
+            <Work locale={locale} />
+            <Cta locale={locale} />
+            <Footer locale={locale} />
         </main>
     )
 }

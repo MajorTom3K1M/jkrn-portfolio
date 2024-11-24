@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Locale } from '@/i18n';
 
 // import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,6 +15,10 @@ import { Pagination } from 'swiper/modules';
 
 // components
 import ProjectCard from '@/components/ProjectCard';
+
+type Props = {
+    locale: Locale;
+};
 
 const projectData = [
     {
@@ -99,7 +104,7 @@ const projectData = [
     },
 ];
 
-const Work = () => {
+const Work = ({ locale }: Props) => {
     return (
         <section className='relative mb-12 xl:mb-48'>
             <div className='container mx-auto'>

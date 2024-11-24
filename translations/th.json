@@ -1,13 +1,12 @@
 {
-    "nav": {
-        "localeSelector": {
-            "message": ""
-        }
+    "hero": {
+        "title": "Fullstack Developer",
+        "name": "จักรรินทร์ มิตร์วงษา",
+        "description": "ฉันเป็นนักพัฒนาซอฟต์แวร์แบบเต็มระบบ และมีความหลงใหลในการสร้างเว็บไซต์ที่สวยงามและทำงานได้ดี"
     },
-    "views": {
-        "home": {
-            "title": "",
-            "body": ""
-        }
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects"
     }
 }
