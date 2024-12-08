@@ -1,21 +1,25 @@
 import { Button } from '@/components/ui/button';
 import { Locale } from '@/i18n';
+import { getTranslation } from '@/lib/i18n/getTranslation';
 import Link from 'next/link';
 
 type Props = {
     locale: Locale;
 };
 
-const Cta = ({ locale }: Props) => {
+const Cta = async ({ locale }: Props) => {
+    const translation = await getTranslation(locale);
+
     return (
         <section className='py-24 bg-tertiary dark:bg-secondary/40'>
             <div className='container mx-auto'>
                 <div className='flex flex-col items-center'>
                     <h2 className='h2 max-w-xl text-center mb-8'>
-                        Eager to bring my skills and passion to your company's next big project.
+                        {translation("cta.text")}
+                        {/* Eager to bring my skills and dedication to your company's next big project. */}
                     </h2>
                     <Link href='/contact'>
-                        <Button>Contact Me</Button>
+                        <Button>{translation("cta.contact")}</Button>
                     </Link>
                 </div>
             </div>

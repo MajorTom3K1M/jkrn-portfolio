@@ -1,8 +1,76 @@
 {
     "hero": {
-        "title": "Fullstack Developer",
+        "title": "Software Engineer / Web Developer",
         "name": "จักรรินทร์ มิตร์วงษา",
-        "description": "ฉันเป็นนักพัฒนาซอฟต์แวร์แบบเต็มระบบ และมีความหลงใหลในการสร้างเว็บไซต์ที่สวยงามและทำงานได้ดี"
+        "description": "ปัจจุบันเป็น Developer ที่ทำเน้นด้าน <focused>Backend Development</focused> และต้องการที่จะเติบโตเข้าสู่การทำ <focused>Fullstack Development</focused> เชี่ยวชาญในการสร้างระบบด้วย <highlight>Node.js</highlight>, <highlight>PostgreSQL</highlight>, <highlight>MongoDB</highlight> และ<highlight>บริการของ AWS</highlight> แม้ว่างานหลักของผมจะเน้นที่ Backend แต่ก็มีประสบการณ์ที่มีคุณค่าในด้าน Fullstack ผ่านโปรเจกต์ส่วนตัวด้วย <highlight>Go</highlight>, <highlight>React</highlight>, <highlight>Next.js</highlight> และ <highlight>TypeScript</highlight>",
+        "contact": "ติดต่อฉัน",
+        "download": "ดาวน์โหลด CV",
+        "yearOfExperience": "ปี ของ ประสบการณ์",
+        "sideProjects": "โปรเจกต์ ส่วนตัว",
+        "computerLanguages": "ภาษาคอมพิวเตอร์"
+    },
+    "cta": {
+        "text": "พร้อมที่จะนำทักษะและความมุ่งมั่นมาใช้เพื่อร่วมพัฒนาโปรเจกต์กับบริษัทของคุณ",
+        "contact": "ติดต่อฉัน"
+    },
+    "about": {
+        "title": "เกี่ยวกับฉัน",
+        "personalInfo": "ข้อมูลส่วนตัว",
+        "qualifications": "คุณสมบัติ",
+        "education": "การศึกษา",
+        "experience": "ประสบการณ์",
+        "journeyTitle": "การเดินทางอันน่าทึ่งของฉัน",
+        "personalInfoQuote": "สร้างนวัตกรรมให้กับโลกมาเป็นเวลากว่า 4 ปี",
+        "personalInfoDescription": "เชี่ยวชาญในการสร้างเว็บไซต์ที่ใช้งานง่ายและให้ประสบการณ์ที่น่าตื่นใจ ทำไอเดียให้เป็นความจริงผ่านการแก้ปัญหาอย่างสร้างสรรค์",
+        "languageSkill": "ทักษะด้านภาษา",
+        "Languages": "ไทย, อังกฤษ",
+        "name": "จักรรินทร์ มิตร์วงษา",
+        "birthday": "เกิดเมื่อ 10 กรกฎาคม 2540",
+        "degree": "ปริญญาวิทยาศาสตรบัณฑิต สาขาวิทยาการคอมพิวเตอร์",
+        "location": "กรุงเทพมหานคร, ประเทศไทย",
+        "ibm": {
+            "start": "1 มิถุนายน 2562",
+            "end": "1 ธันวาคม 2562",
+            "duration": "6 เดือน",
+            "details": {
+                "0": "ทำงานใน 2 โปรเจกต์ และเป็นสมาชิกหลักในทีมพัฒนา",
+                "1": "โปรเจกต์แรก สร้างเว็บแอพพลิเคชันสำหรับอีคอมเมิร์ซพร้อมกับแชทบอท โดยใช้ HTML/IBM Watson Assistant/CSS/React.js/Node.js/MongoDB",
+                "2": "โปรเจกต์ที่สอง ทำงานกับโมบายแอพพลิเคชัน IoT โดยใช้ Arduino/C/React Native/IBM Watson IoT/Node.js/MongoDB"
+            }
+        },
+        "vonder": {
+            "start": "14 กันยายน 2563",
+            "end": "ปัจจุบัน",
+            "duration": "4 ปี+",
+            "details": {
+                "0": "พัฒนาและบำรุงรักษา Backend Services โดยใช้ Node.js, MongoDB, PostgreSQL, และ AWS Lambda, ปรับปรุงความถูกต้อง ความน่าเชื่อถือได้ และ ขยายขอบเขตของระบบ",
+                "1": "สร้าง ETL pipeline เพื่อย้ายข้อมูลจาก MongoDB ไปยัง Amazon Redshift โดยใช้ Python และ AWS S3, ปรับปรุงข้อมูล Analytics โดยการทำให้แน่ใจว่าข้อมูลใน Data Warehouse นั้นเป็นข้อมูลที่อัพเดทเป็นปัจจุบันและถูกต้อง",
+                "2": "สร้างระบบการแจ้งเตือนและการกระจายข่าวสารสำหรับแอปพลิเคชัน LINE โดยใช้ Node.js, PostgreSQL, MongoDB, AWS Lambda, และ Cron Jobs, ยกระดับการสื่อสารกับผู้ใช้ผ่านการแจ้งเตือนตามเวลาที่กำหนดและการส่งข้อความตรงถึงกลุ่มเป้าหมาย",
+                "3": "ปรับปรุง Analytics และ ระบบการทำ Report โดยการนำเอา Apache Airflow มาใช้ในการทำ Data Rollups และย้ายจาก Amazon Redshift ไปยัง PostgreSQL, ลดเวลาในการ query และต้นทุนในการดำเนินการ พร้อมทั้งปรับปรุงประสิทธิภาพ",
+                "4": "เพิ่มความปลอดภัยให้กับระบบโดยการลดความเสี่ยงของ SQL injection โดยการใช้ Prepared Statements และทำ Header เพื่อความปลอดภัยด้วย Helmet ใน Node.js, เสริมความปลอดภัยของระบบโดยรวม",
+                "5": "เริ่มต้นด้านการพัฒนาเกมด้วย Unity และ C#, สร้าง mini-game ในเวลา 15 วัน และทำ Cutscene, ระบบเควส, และ ระบบการจัดการไอเทมในเวลา 1 เดือน, แสดงให้เห็นถึงความสามารถในการปรับตัวและการเรียนรู้อย่างรวดเร็ว",
+                "6": "ดำเนินการทดสอบการ Load Testing App และปรับปรุงประสิทธิภาพ, ผลลัพธ์ทำให้รองรับ API request per minute เพิ่มขี้่น 132% และ ได้มีอัตราความสำเร็จของ API request 100%, ทำให้แน่ใจว่า Services มีความพร้อมใช้งานสูงและเชื่อถือได้"
+            }
+        }
+    },
+    "skills": {
+        "title": "ทักษะของฉัน",
+        "intermediate": "ระดับกลาง",
+        "advanced": "ระดับสูง",
+        "basic": "ระดับพื้นฐาน"
+    },
+    "timeline": {
+        "clickForDetails": "คลิกเพื่อดูรายละเอียด",
+        "detailedTimeframe": "ช่วงเวลาแบบละเอียด:",
+        "close": "ปิด",
+        "start": "เริ่มต้น:",
+        "end": "สิ้นสุด:",
+        "duration": "ระยะเวลา:"
+    },
+    "work": {
+        "lastestProjects": "โปรเจกต์ล่าสุด",
+        "description": "โปรเจกต์เหล่านี้แสดงให้เห็นถึงความเชี่ยวชาญ และการนำทักษะมาประยุกต์ใช้จริง",
+        "allProjects": "โปรเจกต์ทั้งหมด"
     },
     "nav": {
         "home": "Home",

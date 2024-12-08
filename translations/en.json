@@ -1,8 +1,76 @@
 {
     "hero": {
-        "title": "Fullstack Developer",
+        "title": "Software Engineer / Web Developer",
         "name": "Jakkarin Mitvongsa",
-        "description": "I'm a fullstack developer with a passion for building beautiful and functional websites."
+        "description": "A <focused>backend-focused</focused> software engineer eager to grow into <focused>fullstack development</focused>. I specialize in building reliable systems with <highlight>Node.js</highlight>, <highlight>PostgreSQL</highlight>, <highlight>MongoDB</highlight>, and <highlight>AWS services</highlight>. While backend is my primary focus, I’ve gained valuable fullstack experience through side projects with <highlight>Go</highlight>, <highlight>React</highlight>, <highlight>Next.js</highlight>, and <highlight>TypeScript</highlight>.",
+        "contact": "Contact me",
+        "download": "Download CV",
+        "yearOfExperience": "Years Of Experience",
+        "sideProjects": "Side Projects",
+        "computerLanguages": "Computer Languages"
+    },
+    "cta": {
+        "text": "Eager to bring my skills and dedication to your company's next big project.",
+        "contact": "Contact me"
+    },
+    "about": {
+        "title": "About Me",
+        "personalInfo": "Personal Info",
+        "qualifications": "Qualifications",
+        "education": "Education",
+        "experience": "Experience",
+        "journeyTitle": "My Awesome Journey",
+        "personalInfoQuote": "Delivering Innovative Solutions for Over 4 Years",
+        "personalInfoDescription": "I specialize in creating intuitive websites that offer dynamic and engaging user experiences, bringing ideas to life through innovative solutions.",
+        "languageSkill": "Language Skills",
+        "Languages": "Thai, English",
+        "name": "Jakkarin Mitvongsa",
+        "birthday": "Born on 10 July, 1997",
+        "degree": "Bachelor of Science in Computer Science",
+        "location": "Bangkok, Thailand",
+        "ibm": {
+            "start": "June 1, 2019",
+            "end": "December 1, 2019",
+            "duration": "6 months",
+            "details": {
+                "0": "I worked on 2 projects. I was a core member in development team.",
+                "1": "First project was building web application for e-commerce with chatbot utilizing HTML/IBM Watson Assistant/CSS/React.js/Node.js/MongoDB.",
+                "2": "Second project worked on IoT mobile app using Arduino/C/React Native/IBM Watson IoT/Node.js/MongoDB."
+            }
+        },
+        "vonder": {
+            "start": "September 14, 2020",
+            "end": "Present",
+            "duration": "4 year+",
+            "details": {
+                "0": "Developed and maintained backend services using Node.js, MongoDB, PostgreSQL, and AWS Lambda, enhancing system reliability and scalability.",
+                "1": "Built an ETL pipeline to migrate data from MongoDB to Amazon Redshift using Python and AWS S3, improving data analytics by ensuring up-to-date and accurate data warehousing.",
+                "2": "Engineered a notification and broadcast system for the LINE messaging app using Node.js, PostgreSQL, AWS Lambda, and cron jobs, improving user communication through scheduled notifications and targeted broadcasts.",
+                "3": "Optimized analytics and reporting by introducing Apache Airflow for data rollups and migrating from Amazon Redshift to PostgreSQL, reducing query times and operational costs while improving performance.",
+                "4": "Enhanced system security by mitigating SQL injection vulnerabilities using Prepared Statements and implementing security headers with Helmet in Node.js, strengthening overall application security.",
+                "5": "Ventured into game development using Unity and C#, creating a mini-game in 15 days and developing cutscene scenarios, quest systems, and inventory systems in one month, demonstrating adaptability and quick learning.",
+                "6": "Conducted load testing and performance optimization, resulting in a 132% increase in completed requests per minute and achieving 100% API success rates, ensuring high availability and reliability of services."
+            }
+        }
+    },
+    "skills": {
+        "title": "My Skills",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "basic": "Basic"
+    },
+    "timeline": {
+        "clickForDetails": "Click for details",
+        "detailedTimeframe": "Detailed Timeframe:",
+        "close": "Close",
+        "start": "Start:",
+        "end": "End:",
+        "duration": "Duration:"
+    },
+    "work": {
+        "lastestProjects": "Lastest Projects",
+        "description": "These projects highlight my proficiency by demonstrating my skills in action.",
+        "allProjects": "All projects"
     },
     "nav": {
         "home": "Home",

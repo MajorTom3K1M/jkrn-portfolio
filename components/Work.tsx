@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { useTranslation } from '@/components/providers/TranslationProvider';
 import { Button } from '@/components/ui/button';
 import { Locale } from '@/i18n';
 
@@ -22,35 +23,35 @@ type Props = {
 
 const projectData = [
     {
-        image: '/work/3.png',
-        category: 'react js',
-        name: 'Nexa Website',
+        image: '/work/discord-clone.png',
+        category: ['react js'],
+        name: 'Discord Clone',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
         link: '/',
         github: '/',
     },
     {
-        image: '/work/4.png',
-        category: 'react js',
-        name: 'Solstice Website',
+        image: '/work/chatbot-3.png',
+        category: ['react js'],
+        name: 'Rose Chatbot',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
         link: '/',
         github: '/',
     },
     {
-        image: '/work/2.png',
-        category: 'next js',
-        name: 'Lumina Website',
+        image: '/work/wasm-chat.png',
+        category: ['next js'],
+        name: 'Wasm Chat',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
         link: '/',
         github: '/',
     },
     {
-        image: '/work/1.png',
-        category: 'next js',
+        image: '/work/web-cgp.png',
+        category: ['next js'],
         name: 'Evolve Website',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
@@ -59,7 +60,7 @@ const projectData = [
     },
     {
         image: '/work/3.png',
-        category: 'next js',
+        category: ['next js'],
         name: 'Ignite Website',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
@@ -68,7 +69,7 @@ const projectData = [
     },
     {
         image: '/work/4.png',
-        category: 'next js',
+        category: ['next js'],
         name: 'Envision Website',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
@@ -77,7 +78,7 @@ const projectData = [
     },
     {
         image: '/work/1.png',
-        category: 'fullstack',
+        category: ['fullstack'],
         name: 'Serenity Website',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
@@ -86,7 +87,7 @@ const projectData = [
     },
     {
         image: '/work/3.png',
-        category: 'fullstack',
+        category: ['fullstack'],
         name: 'Nova Website',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
@@ -95,7 +96,7 @@ const projectData = [
     },
     {
         image: '/work/2.png',
-        category: 'fullstack',
+        category: ['fullstack'],
         name: 'Zenith Website',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
@@ -105,21 +106,23 @@ const projectData = [
 ];
 
 const Work = ({ locale }: Props) => {
+    const { translation } = useTranslation();
     return (
         <section className='relative mb-12 xl:mb-48'>
-            <div className='container mx-auto'>
+            <div className='container mx-auto gap-x-8 xl:flex'>
                 {/* text */}
                 <div className='max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start'>
-                    <h2 className='section-title mb-4'>Lastest Projects</h2>
+                    <h2 className='section-title mb-4'>{translation("work.lastestProjects")}</h2>
                     <p className='subtitle mb-8'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        {translation('work.description')}
                     </p>
                     <Link href='/projects'>
-                        <Button>All projects</Button>
+                        <Button>{translation("work.allProjects")}</Button>
                     </Link>
                 </div>
                 {/* slider */}
-                <div className='xl:max-w-[1000px] xl:absolute right-0 top-0'>
+                {/* <div className='xl:max-w-[1000px] xl:absolute right-0 top-0'> */}
+                <div className='xl:max-w-[1000px]'>
                     <Swiper
                         className='h-[480px]'
                         slidesPerView={1}
@@ -136,7 +139,7 @@ const Work = ({ locale }: Props) => {
                         {projectData.slice(0, 4).map((project, index) => {
                             return (
                                 <SwiperSlide key={index}>
-                                    <ProjectCard project={project} />
+                                    <ProjectCard project={project} isHoverAction={true} />
                                 </SwiperSlide>
                             );
                         })}

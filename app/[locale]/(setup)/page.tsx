@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import Skills from '@/components/Skills';
 
 import { Locale } from '@/i18n';
+import { getTranslation, TranslationKey } from '@/lib/i18n/getTranslation';
 
 type Props = {
     params: {
