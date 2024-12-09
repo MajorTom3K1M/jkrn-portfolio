@@ -74,7 +74,67 @@
     },
     "nav": {
         "home": "Home",
-        "about": "About",
-        "projects": "Projects"
+        "projects": "My Projects",
+        "contact": "Contact"
+    },
+    "projects": {
+        "title": "My Projects",
+        "discord-clone": {
+            "description": "A Discord clone replicating core features—account creation, server/channel management, and real-time communication."
+        },
+        "webcgp-kmitl": {
+            "description": "A web-based game launcher that hosts a collection of games, allowing users to play them directly in their web browser."
+        },
+        "wasm-chat-application": {
+            "description": "A lightweight chat application that allows users to join chats, send messages, and receive messages in real time."
+        },
+        "rose-chatbot": {
+            "description": "Rosé Chatbot is a LINE chatbot acted as an interface between a merchant and their customer."
+        },
+        "dfs-bfs-application": {
+            "description": "A web application that visualizes the Depth-First Search and Breadth-First Search algorithms through maze."
+        },
+        "nodejs-chat-application": {
+            "description": "Node.js Chat Application is a simple node.js chat application powered by Express and Socket.io."
+        },
+        "mern-cart-application": {
+            "description": "MERNCart is a expressCart clone but recreate with MERN Stack it provide a fully functional shopping cart."
+        },
+        "draxit": {
+            "description": "A real-time multiplayer web game inspired by Dixit board game, with a creative twist where players draw the cards themselves."
+        },
+        "phaser3-webrtc": {
+            "description": "A proof of concept for a simple 2D multiplayer game with real-time video and audio communication."
+        },
+        "rust-raycaster": {
+            "description": "A simple raycaster implemented in Rust to explore Rust programming and OpenGL graphics."
+        },
+        "swapbook-api": {
+            "description": "Swapbook is a mobile application that make you can easily trade a book with another people."
+        },
+        "cv-post-estimation": {
+            "description": "Human pose estimation that seeks a method that minimizes the use of Deep Learning approaches."
+        },
+        "epic-games-auto-claim": {
+            "description": "Epic Games Auto Claim is a web application that automatically claims free games from the Epic Games Store on your behalf."
+        },
+        "avalon": {
+            "description": "A web-based implementation of the social deduction game Avalon, built with React and Socket.io for real-time interactions."
+        },
+        "cgp-kmitl": {
+            "description": "Collection of game project for learning Computer Game Programming."
+        },
+        "webrtc-sfu": {
+            "description": "Go implementation of a Selective Forwarding Unit (SFU) for WebRTC. The server uses WebSocket for signaling and the Gin framework for HTTP handling."
+        },
+        "vonder-games": {
+            "description": "This project is a 2D platformer developed using Unity's 2D Universal Render Pipeline and the new Input System. The game features a variety of mechanics, interactive elements."
+        }
+    },
+    "contact": {
+        "title": "Contact Me",
+        "sayHello": "Say Hello",
+        "titleDescription": "Let's Work Together.",
+        "description": "I'm always open to new opportunities. Feel free to reach out through any of the channels below."
     }
 }

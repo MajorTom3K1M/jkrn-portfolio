@@ -108,7 +108,7 @@ const ProjectCard = ({ project, isHoverAction }: ProjectCardProps) => {
                         <Button variant="secondary" size="sm" className='rounded-full' asChild>
                             <a href={project.github} target="_blank" rel="noopener noreferrer">
                                 <Github className="w-4 h-4 mr-2" />
-                                View Code
+                                Github
                             </a>
                         </Button>
                     )}

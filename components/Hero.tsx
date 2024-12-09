@@ -72,7 +72,7 @@ const Hero = async ({ locale }: Props) => {
                         <Badge
                             containerStyles='absolute top-[80%] left-[5%] sm:left-[26%] md:left-[30%] lg:left-[24.5%] xl:-left-[1rem]'
                             icon={<RiTodoFill />}
-                            endCountNum={30}
+                            endCountNum={15}
                             endCountText='+'
                             badgeText={translation('hero.sideProjects')}
                         />

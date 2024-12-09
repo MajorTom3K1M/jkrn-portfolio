@@ -21,92 +21,52 @@ type Props = {
     locale: Locale;
 };
 
-const projectData = [
-    {
-        image: '/work/discord-clone.png',
-        category: ['react js'],
-        name: 'Discord Clone',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/work/chatbot-3.png',
-        category: ['react js'],
-        name: 'Rose Chatbot',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/work/wasm-chat.png',
-        category: ['next js'],
-        name: 'Wasm Chat',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/work/web-cgp.png',
-        category: ['next js'],
-        name: 'Evolve Website',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/work/3.png',
-        category: ['next js'],
-        name: 'Ignite Website',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/work/4.png',
-        category: ['next js'],
-        name: 'Envision Website',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/work/1.png',
-        category: ['fullstack'],
-        name: 'Serenity Website',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/work/3.png',
-        category: ['fullstack'],
-        name: 'Nova Website',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/work/2.png',
-        category: ['fullstack'],
-        name: 'Zenith Website',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-        link: '/',
-        github: '/',
-    },
-];
-
 const Work = ({ locale }: Props) => {
     const { translation } = useTranslation();
+
+    const projectData = [
+        {
+            image: '/work/discord-clone.png',
+            category: ['next js', 'go', 'webrtc', 'websocket', 'tailwind css', 'postgresql', 'fullstack'],
+            name: 'Discord Clone',
+            description: translation('projects.discord-clone.description'),
+            link: '/',
+            github: 'https://github.com/MajorTom3K1M/discord-clone',
+        },
+        {
+            image: '/work/web-cgp.png',
+            category: ['next js', 'c#', 'tailwind css', 'monogame'],
+            name: 'WebCGP KMITL',
+            description: translation('projects.webcgp-kmitl.description'),
+            link: '/',
+            github: 'https://github.com/MajorTom3K1M/WebCGP-KMITL',
+        },
+        {
+            image: '/work/wasm-chat.png',
+            category: ['rust', 'yew.rs', 'pubnub'],
+            name: 'Wasm Chat Application',
+            description: translation('projects.wasm-chat-application.description'),
+            link: '/',
+            github: 'https://github.com/MajorTom3K1M/wasm-chat',
+        },
+        {
+            image: '/work/line-bot.gif',
+            category: ['node js', 'line api', 'firebase'],
+            name: 'Rosé Chatbot',
+            description: translation('projects.rose-chatbot.description'),
+            link: '/',
+            github: 'https://github.com/MajorTom3K1M/rose-chat-bot',
+        },
+        {
+            image: '/work/dfs-bfs.png',
+            category: ['node js', 'jquery', 'express', 'handlebars'],
+            name: 'DFS-BFS Application',
+            description: translation('projects.dfs-bfs-application.description'),
+            link: '/',
+            github: 'https://github.com/MajorTom3K1M/dfs-bfs-application',
+        }
+    ];
+
     return (
         <section className='relative mb-12 xl:mb-48'>
             <div className='container mx-auto gap-x-8 xl:flex'>
@@ -124,7 +84,7 @@ const Work = ({ locale }: Props) => {
                 {/* <div className='xl:max-w-[1000px] xl:absolute right-0 top-0'> */}
                 <div className='xl:max-w-[1000px]'>
                     <Swiper
-                        className='h-[480px]'
+                        className='h-[520px]'
                         slidesPerView={1}
                         breakpoints={{
                             640: {

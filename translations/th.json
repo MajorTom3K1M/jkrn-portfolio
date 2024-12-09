@@ -73,8 +73,68 @@
         "allProjects": "โปรเจกต์ทั้งหมด"
     },
     "nav": {
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects"
+        "home": "หน้าหลัก",
+        "projects": "โปรเจกต์",
+        "contact": "ติดต่อ"
+    },
+    "projects": {
+        "title": "โปรเจกต์ของฉัน",
+        "discord-clone": {
+            "description": "App ที่ทำการลอก Feature หลักๆ ของ Discord เช่น การสร้างบัญชี, การจัดการ เซิร์ฟเวอร์/แชนแนล และการสื่อสารแบบเรียลไทม์"
+        },
+        "webcgp-kmitl": {
+            "description": "Game Launcher บนเว็บที่เป็นที่เก็บรวบรวมเกมต่างๆ ให้ผู้ใช้สามารถเล่นได้โดยตรงผ่านเว็บเบราว์เซอร์"
+        },
+        "wasm-chat-application": {
+            "description": "แอพพลิเคชันแชทที่ใช้เทคโนโลยี WebAssembly ทำให้ผู้ใช้สามารถเข้าร่วมแชท, ส่งข้อความ, และรับข้อความแบบเรียลไทม์"
+        },
+        "rose-chatbot": {
+            "description": "Rosé Chatbot เป็น LINE chatbot ที่ทำหน้าที่เป็นอินเตอร์เฟซระหว่างร้านค้ากับลูกค้าของพวกเขา"
+        },
+        "dfs-bfs-application": {
+            "description": "แอพพลิเคชันเว็บที่แสดงการทำงานของ Depth-First Search และ Breadth-First Search ผ่านการทำการแก้ปัญหา เขาวงกต"
+        },
+        "nodejs-chat-application": {
+            "description": "Node.js Chat Application เป็นแอพพลิเคชันแชทที่ใช้เทคโนโลยี Express และ Socket.io"
+        },
+        "mern-cart-application": {
+            "description": "MERNCart เป็น expressCart clone แต่ถูกสร้างใหม่ด้วย MERN Stack มันให้บริการระบบ Shopping Cart ที่ทำงานอย่างเต็มรูปแบบ"
+        },
+        "draxit": {
+            "description": "เกมแบบเว็บที่เป็นเกมแบบ Multiplayer ที่ได้แรงบันดาลใจจากบอร์ดเกม Dixit, มีการเพิ่มเติมความสนุกด้วยการให้ผู้เล่นวาดการ์ดเอง"
+        },
+        "phaser3-webrtc": {
+            "description": "Proof of concept สำหรับเกมแบบ Multiplayer 2D ที่มีการสื่อสารด้วยวิดีโอและเสียงแบบเรียลไทม์"
+        },
+        "rust-raycaster": {
+            "description": "Raycaster ที่ถูกสร้างด้วย Rust เพื่อเรียนรู้การเขียนโปรแกรมด้วย Rust และกราฟิก OpenGL"
+        },
+        "swapbook-api": {
+            "description": "Swapbook เป็น แอพพลิเคชันบนมือถือที่ทำให้คุณสามารถแลกเปลี่ยนหนังสือได้อย่างง่ายดายกับผู้อื่น"
+        },
+        "cv-post-estimation": {
+            "description": "การประเมินการตำแหน่งจุดต่างๆ บนร่างกายของมนุษย์ที่มีเป้าหมายที่จะลดการใช้วิธีการ Deep Learning"
+        },
+        "epic-games-auto-claim": {
+            "description": "Epic Games Auto Claim เป็นแอพพลิเคชันบนเว็บที่ทำการ Claim เกมฟรีจาก Epic Games Store ให้คุณโดยอัตโนมัติ"
+        },
+        "avalon": {
+            "description": "Avalon เป็นเว็บแอพพลิเคชันที่ทำการลอกเกมแบบ Social Deduction ที่ชื่อ Avalon โดยใช้ React และ Socket.io สำหรับการปฏิสัมพันธ์แบบเรียลไทม์"
+        },
+        "cgp-kmitl": {
+            "description": "โปรเจกต์ที่รวบรวมเกมที่เกิดจากการเรียนรู้ Computer Game Programming"
+        },
+        "webrtc-sfu": {
+            "description": "สร้าง Selective Forwarding Unit (SFU) สำหรับ WebRTC และใช้ WebSocket สำหรับการสื่อสารและ Gin framework สำหรับการจัดการ HTTP ด้วยภาษา Go"
+        },
+        "vonder-games": {
+            "description": "โปรเจกต์เกมแบบ 2D platformer ที่ถูกพัฒนาด้วย Unity's 2D Universal Render Pipeline และ Input System ใหม่ โดยมีเมคคานิกหลากหลาย และมีองค์ประกอบที่ผู้เล่นสามารถปฏิสัมพันธ์ได้"
+        }
+    },
+    "contact": {
+        "title": "ติดต่อฉัน",
+        "sayHello": "สวัสดี",
+        "titleDescription": "มาทำงานด้วยกันเถอะ!",
+        "description": "เปิดรับโอกาสใหม่ๆ ตลอดเวลา หากคุณสนใจ สามารถติดต่อได้ทางช่องทางที่ให้ไว้ด้านล่าง"
     }
 }

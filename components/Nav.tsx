@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 
 import { motion } from "framer-motion";
 import { withLocalePath } from "@/lib/utils";
+import { useTranslation } from "@/components/providers/TranslationProvider";
 
 interface NavProps {
     containerStyles: string;
@@ -11,15 +12,17 @@ interface NavProps {
     underlineStyles: string;
 };
 
-const links = [
-    { path: "/", name: "home" },
-    { path: "/projects", name: "my projects" },
-    { path: "/contact", name: "contact" },
-];
-
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }: NavProps) => {
+    const { translation } = useTranslation();
     const path = usePathname();
+
+    const links = [
+        { path: "/", name: translation("nav.home") },
+        { path: "/projects", name: translation("nav.projects") },
+        { path: "/contact", name: translation("nav.contact") },
+    ];
+
     return (
         <nav className={`${containerStyles}`}>
             {links.map((link, index) => {

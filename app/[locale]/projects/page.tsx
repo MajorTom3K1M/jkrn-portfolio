@@ -5,11 +5,24 @@ import ProjectCard from '@/components/ProjectCard';
 import { ChevronDown } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
+import { useTranslation } from '@/components/providers/TranslationProvider';
 
 type FilterType = "all" | "react" | "next" | "fullstack" | "vue" | "angular" | "node" | "python"
 
 const additionalFilters = [
-    'node js'
+    'node js',
+    'react js',
+    'c#',
+    'go',
+    'rust',
+    'python',
+    'express',
+    'socket io',
+    'webrtc',
+    'websocket',
+    'mongodb',
+    'postgresql',
+    'firebase',
 ]
 
 type Project = {
@@ -22,13 +35,14 @@ type Project = {
 };
 
 const Projects = () => {
+    const { translation } = useTranslation();
+
     const projectData: Project[] = [
         {
             image: '/work/discord-clone.png',
             category: ['next js', 'go', 'webrtc', 'websocket', 'tailwind css', 'postgresql', 'fullstack'],
             name: 'Discord Clone',
-            description:
-                'A Discord clone replicating core features—account creation, server/channel management, and real-time communication.',
+            description: translation('projects.discord-clone.description'),
             link: '/',
             github: 'https://github.com/MajorTom3K1M/discord-clone',
         },
@@ -36,8 +50,7 @@ const Projects = () => {
             image: '/work/web-cgp.png',
             category: ['next js', 'c#', 'tailwind css', 'monogame'],
             name: 'WebCGP KMITL',
-            description:
-                'A web-based game launcher that hosts a collection of games, allowing users to play them directly in their web browser.',
+            description: translation('projects.webcgp-kmitl.description'),
             link: '/',
             github: 'https://github.com/MajorTom3K1M/WebCGP-KMITL',
         },
@@ -45,8 +58,7 @@ const Projects = () => {
             image: '/work/wasm-chat.png',
             category: ['rust', 'yew.rs', 'pubnub'],
             name: 'Wasm Chat Application',
-            description:
-                'A lightweight chat application that allows users to join chats, send messages, and receive messages in real time.',
+            description: translation('projects.wasm-chat-application.description'),
             link: '/',
             github: 'https://github.com/MajorTom3K1M/wasm-chat',
         },
@@ -54,8 +66,7 @@ const Projects = () => {
             image: '/work/line-bot.gif',
             category: ['node js', 'line api', 'firebase'],
             name: 'Rosé Chatbot',
-            description:
-                'Rosé Chatbot is a LINE chatbot acted as an interface between a merchant and their customer.',
+            description: translation('projects.rose-chatbot.description'),
             link: '/',
             github: 'https://github.com/MajorTom3K1M/rose-chat-bot',
         },
@@ -63,8 +74,7 @@ const Projects = () => {
             image: '/work/dfs-bfs.png',
             category: ['node js', 'jquery', 'express', 'handlebars'],
             name: 'DFS-BFS Application',
-            description:
-                'A web application that visualizes the Depth-First Search and Breadth-First Search algorithms through maze.',
+            description: translation('projects.dfs-bfs-application.description'),
             link: '/',
             github: 'https://github.com/MajorTom3K1M/dfs-bfs-application',
         },
@@ -72,8 +82,7 @@ const Projects = () => {
             image: '/work/node-chat-app-3.png',
             category: ['node js', 'socket io', 'express', 'html5', 'css', 'jquery', 'fullstack'],
             name: 'Node.js Chat Application',
-            description:
-                'Node.js Chat Application is a simple node.js chat application powered by Express and Socket.io.',
+            description: translation('projects.nodejs-chat-application.description'),
             link: '/',
             github: 'https://github.com/MajorTom3K1M/node-chat-app',
         },
@@ -81,8 +90,7 @@ const Projects = () => {
             image: '/work/mern-cart.png',
             category: ['node js', 'react js', 'express', 'mongodb', 'fullstack'],
             name: 'MERN Cart Application',
-            description:
-                'MERNCart is a expressCart clone but recreate with MERN Stack it provide a fully functional shopping cart.',
+            description: translation('projects.mern-cart-application.description'),
             link: '/',
             github: 'https://github.com/MajorTom3K1M/MERN-Cart',
         },
@@ -90,8 +98,7 @@ const Projects = () => {
             image: '/work/draxit.png',
             category: ['react js', 'node js', 'express', 'socket io', 'mongodb', 'fullstack'],
             name: 'Draxit - A Dixit-Inspired Web Game',
-            description:
-                'A real-time multiplayer web game inspired by Dixit board game, with a creative twist where players draw the cards themselves.',
+            description: translation('projects.draxit.description'),
             link: '/',
             github: 'https://github.com/MajorTom3K1M/draxit',
         },
@@ -99,8 +106,7 @@ const Projects = () => {
             image: '/work/phaser3-webrtc.png',
             category: ['node js', 'socket io', 'phaser3', 'javascript', 'fullstack'],
             name: 'Phaser3 WebRTC',
-            description:
-                'A proof of concept for a simple 2D multiplayer game with real-time video and audio communication.',
+            description: translation('projects.phaser3-webrtc.description'),
             link: '/',
             github: 'https://github.com/MajorTom3K1M/phaser3-webrtc-poc',
         },
@@ -108,64 +114,56 @@ const Projects = () => {
             image: '/work/ray-caster.gif',
             category: ['rust', 'open gl'],
             name: 'Rust Raycaster',
-            description:
-                'A simple raycaster implemented in Rust to explore Rust programming and OpenGL graphics.',
+            description: translation('projects.rust-raycaster.description'),
             github: 'https://github.com/MajorTom3K1M/rust-raycaster',
         },
         {
             image: '/work/swap-book.png',
             category: ['node js', 'postgresql', 'backend'],
             name: 'SwapBook API',
-            description:
-                'Swapbook is a mobile application that make you can easily trade a book with another people.',
+            description: translation('projects.swapbook-api.description'),
             github: 'https://github.com/MajorTom3K1M/swapbook-api',
         },
         {
             image: '/work/cv-post-estimation.png',
             category: ['machine learning', 'python', 'opencv', 'svm', 'sklearn'],
             name: 'Human Pose Estimation Using SVM',
-            description:
-                'Human pose estimation that seeks a method that minimizes the use of Deep Learning approaches.',
+            description: translation('projects.cv-post-estimation.description'),
             github: 'https://github.com/MajorTom3K1M/CV_PoseEstimation',
         },
         {
             image: '/work/epics-game-auto-claim.png',
             category: ['react js', 'node js', 'express', 'epic games api', 'fullstack'],
             name: 'Epic Games Auto Claim',
-            description:
-                'Epic Games Auto Claim is a web application that automatically claims free games from the Epic Games Store on your behalf.',
+            description: translation('projects.epic-games-auto-claim.description'),
             github: 'https://github.com/MajorTom3K1M/epic-games-auto-claim',
         },
         {
             image: '/work/avalon.png',
             category: ['react js', 'node js', 'socket io', 'fullstack'],
             name: 'Web Avalon Game',
-            description:
-                'A web-based implementation of the social deduction game Avalon, built with React and Socket.io for real-time interactions.',
+            description: translation('projects.avalon.description'),
             github: 'https://github.com/MajorTom3K1M/avalon',
         },
         {
             image: '/work/cgp-kmitl.png',
             category: ['c#', 'monogame'],
             name: 'CGP KMITL',
-            description:
-                'Collection of game project for learning Computer Game Programming.',
+            description: translation('projects.cgp-kmitl.description'),
             github: 'https://github.com/MajorTom3K1M/CGP-KMITL',
         },
         {
             image: '/work/webrtc-sfu.png',
             category: ['go', 'webrtc', 'backend'],
             name: 'WebRTC-SFU Server',
-            description:
-                'Go implementation of a Selective Forwarding Unit (SFU) for WebRTC. The server uses WebSocket for signaling and the Gin framework for HTTP handling.',
+            description: translation('projects.webrtc-sfu.description'),
             github: 'https://github.com/MajorTom3K1M/go-webrtc-sfu',
         },
         {
             image: '/work/vonder-games.png',
             category: ['c#', 'unity'],
             name: 'Vonder Unity Assignment',
-            description:
-                'This project is a 2D platformer developed using Unity\'s 2D Universal Render Pipeline and the new Input System. The game features a variety of mechanics, interactive elements.',
+            description: translation('projects.vonder-games.description'),
             github: 'https://github.com/MajorTom3K1M/vonder-unity-assignment',
         },
     ];
@@ -200,7 +198,7 @@ const Projects = () => {
         <section className='min-h-screen pt-12'>
             <div className='container mx-auto'>
                 <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>
-                    My Projects
+                    {translation('projects.title')}
                 </h2>
                 {/* tabs */}
                 {/* <Tabs defaultValue={category} className='mb-24 xl:mb-48'> */}
@@ -231,7 +229,7 @@ const Projects = () => {
                             >
                                 {currentDropdownLabel} <ChevronDown className="self-center h-4 w-4" />
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end" className="w-[200px]">
+                            <DropdownMenuContent align="end" className="w-[200px] max-h-48 md:max-h-max overflow-y-auto">
                                 <DropdownMenuRadioGroup value={category} onValueChange={(selectedCategory) => setCategory(selectedCategory)}>
                                     {additionalFilters.map((filter) => (
                                         <DropdownMenuRadioItem
