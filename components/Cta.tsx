@@ -18,7 +18,7 @@ const Cta = async ({ locale }: Props) => {
                         {translation("cta.text")}
                         {/* Eager to bring my skills and dedication to your company's next big project. */}
                     </h2>
-                    <Link href='/contact'>
+                    <Link href={`${locale}/contact`}>
                         <Button>{translation("cta.contact")}</Button>
                     </Link>
                 </div>

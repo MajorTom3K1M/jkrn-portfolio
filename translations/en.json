@@ -51,6 +51,16 @@
                 "5": "Ventured into game development using Unity and C#, creating a mini-game in 15 days and developing cutscene scenarios, quest systems, and inventory systems in one month, demonstrating adaptability and quick learning.",
                 "6": "Conducted load testing and performance optimization, resulting in a 132% increase in completed requests per minute and achieving 100% API success rates, ensuring high availability and reliability of services."
             }
+        },
+        "kmitl": {
+            "start": "August 2016",
+            "end": "June 2020",
+            "duration": "4 years",
+            "details": {
+                "0": "Bachelor of Science in Computer Science",
+                "1": "GPA: 3.92"
+            },
+            "description": "I graduated from King Mongkut's Institute of Technology Ladkrabang with a Bachelor of Science in Computer Science. During my studies, I developed a strong foundation in computer science and software engineering, gaining experience in programming, data structures, algorithms, and software development methodologies and more."
         }
     },
     "skills": {
@@ -65,7 +75,8 @@
         "close": "Close",
         "start": "Start:",
         "end": "End:",
-        "duration": "Duration:"
+        "duration": "Duration:",
+        "viewTranscript": "View Transcript"
     },
     "work": {
         "lastestProjects": "Lastest Projects",

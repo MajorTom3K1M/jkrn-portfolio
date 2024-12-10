@@ -76,7 +76,7 @@ const Work = ({ locale }: Props) => {
                     <p className='subtitle mb-8'>
                         {translation('work.description')}
                     </p>
-                    <Link href='/projects'>
+                    <Link href={`${locale}/projects`}>
                         <Button>{translation("work.allProjects")}</Button>
                     </Link>
                 </div>

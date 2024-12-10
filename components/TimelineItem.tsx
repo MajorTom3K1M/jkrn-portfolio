@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogTitle, DialogHeader, DialogDescription, Di
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-import { Calendar, ChevronRight, ExternalLink } from "lucide-react";
+import { Calendar, ChevronRight, ExternalLink, FileText } from "lucide-react";
 
 import { useTranslation } from "@/components/providers/TranslationProvider";
 
@@ -23,11 +23,17 @@ interface TimelineItemProps {
     description: string
     details?: string[]
     tags: string[]
+    transcriptUrl?: string
 }
 
-function TimelineItem({ title, subtitle, date, detailedDate, description, tags, details }: TimelineItemProps) {
+function TimelineItem({ title, subtitle, date, detailedDate, description, tags, details, transcriptUrl }: TimelineItemProps) {
     const { translation } = useTranslation()
     const [isOpen, setIsOpen] = useState(false)
+
+    const openTranscript = () => {
+        console.log('transcriptUrl', transcriptUrl)
+        window.open(transcriptUrl, '_blank', 'noopener,noreferrer')
+    }
 
     return (
         <>
@@ -63,6 +69,12 @@ function TimelineItem({ title, subtitle, date, detailedDate, description, tags, 
                     <DialogHeader>
                         <DialogTitle>{title}</DialogTitle>
                         <DialogDescription>{subtitle}</DialogDescription>
+                        {/* {transcriptUrl && (<div>
+                            <Button size="sm" variant="outline" className='rounded-full flex items-center justify-center gap-2'>
+                                <FileText className="w-4 h-4" />
+                                View Transcript
+                            </Button>
+                        </div>)} */}
                     </DialogHeader>
                     <ScrollArea className="max-h-[60vh] overflow-auto">
                         <div className="grid gap-4 py-4">
@@ -75,22 +87,32 @@ function TimelineItem({ title, subtitle, date, detailedDate, description, tags, 
                                     <p className="text-xs">{translation("timeline.duration")} {detailedDate.duration}</p>
                                 </div>
                             </div>
-                            { description && <p className="text-sm">{description}</p> }
-                            {/* <p className="text-sm">{description}</p> */}
+
                             <ul className="space-y-2 text-sm">
                                 {details?.map((detail, detailIndex) => (
                                     <li key={detailIndex} className="flex flex-1 items-start">
-                                        <span className="mr-2 mt-1.5 w-[4px] h-[4px] aspect-square rounded-full bg-red-400" />
+                                        <span className="text-center justify-self-center mr-2 mt-2 w-[4px] h-[4px] aspect-square rounded-full bg-red-400" />
                                         {detail}
                                     </li>
                                 ))}
                             </ul>
+
+                            {description && <p className="text-sm">{description}</p>}
+
+                            {transcriptUrl && (<div>
+                                <Button size="sm" variant="outline" className='rounded-full flex items-center justify-center gap-2' onClick={openTranscript}>
+                                    <FileText className="w-4 h-4" />
+                                    {/* View Transcript */}
+                                    {translation("timeline.viewTranscript")}
+                                </Button>
+                            </div>)}
 
                             <div className="flex flex-wrap gap-1 mt-2">
                                 {tags.map((tag, index) => (
                                     <span key={index} className="text-xs bg-muted px-2 py-1 rounded">{tag}</span>
                                 ))}
                             </div>
+
                         </div>
                     </ScrollArea>
                     <DialogClose asChild>

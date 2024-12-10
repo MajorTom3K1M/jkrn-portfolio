@@ -37,6 +37,7 @@ interface Item {
             duration: string;
         },
         tags: Array<string>;
+        transcriptUrl?: string;
     }>;
 };
 
@@ -95,14 +96,19 @@ const About = ({ locale }: Props) => {
             data: [
                 {
                     university: "King Mongkut's Institute Technology of Ladkrabang",
-                    qualification: 'Bachelor of Science',
+                    qualification: 'Bachelor of Science in Computer Science',
                     years: '2016 - 2020',
-                    description: `Studied fundamental and advanced computer science concepts. Completed projects in software development and system design. Participated in programming competitions and tech events. Coursework included Data Structures, Algorithms, Database Systems, Computer Networks, and Software Engineering. Completed a capstone project developing a machine learning-based recommendation system for local businesses. Participated in a study abroad program at the University of California, Berkeley for one semester, focusing on Artificial Intelligence and Big Data Analytics. Achieved Dean's List recognition for academic excellence in 6 out of 8 semesters.`,
+                    details: [
+                        translation("about.kmitl.details.0"),
+                        translation("about.kmitl.details.1"),
+                    ],
+                    description: translation("about.kmitl.description"),
                     detailedDate: {
-                        start: translation("about.ibm.start"),
-                        end: translation("about.ibm.end"),
-                        duration: translation("about.ibm.duration")
+                        start: translation("about.kmitl.start"),
+                        end: translation("about.kmitl.end"),
+                        duration: translation("about.kmitl.duration")
                     },
+                    transcriptUrl: 'https://drive.google.com/file/d/1NBoqD0Btx9gZAurxPezXw6BNmE_y5WEA/view',
                     tags: []
                 }
             ],
@@ -144,7 +150,7 @@ const About = ({ locale }: Props) => {
                         end: translation("about.vonder.end"),
                         duration: translation("about.vonder.duration")
                     },
-                    tags: ['Node.js', 'MongoDB', 'PostgreSQL', 'AWS Lambda', 'Python', 'AWS S3', 'Amazon Redshift', 'Apache Airflow', 'Unity', 'C#', 'SQL Injection', 'Prepared Statements', 'Helmet', 'Load Testing', 'Performance Optimization']
+                    tags: ['Node.js', 'MongoDB', 'PostgreSQL', 'AWS Lambda', 'Python', 'AWS S3', 'Amazon Redshift', 'Apache Airflow', 'Unity', 'C#', 'SQL Injection', 'Load Testing', 'Performance Optimization']
                 }
             ],
         },
@@ -305,7 +311,7 @@ const About = ({ locale }: Props) => {
                                                 <div className='flex flex-col gap-y-8'>
                                                     {getData(qualificationData, translation("about.education"))?.data?.map(
                                                         (item, index) => {
-                                                            const { university, qualification, years, detailedDate, description } = item;
+                                                            const { university, qualification, years, detailedDate, description, details, transcriptUrl } = item;
                                                             return (
                                                                 <div className='flex gap-x-8 group' key={index}>
                                                                     <TimelineItem
@@ -318,7 +324,8 @@ const About = ({ locale }: Props) => {
                                                                             duration: detailedDate?.duration
                                                                         }}
                                                                         description={description ?? ''}
-                                                                        details={[]}
+                                                                        details={details}
+                                                                        transcriptUrl={transcriptUrl}
                                                                         tags={[]}
                                                                     />
                                                                     {/* <div className='h-[84px] w-[1px] bg-border relative ml-2'>
