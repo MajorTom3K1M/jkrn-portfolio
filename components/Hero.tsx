@@ -17,6 +17,8 @@ import Badge from '@/components/Badge';
 import { Locale } from '@/i18n';
 import { getTranslation } from '@/lib/i18n/getTranslation';
 
+const cvUrl = 'https://drive.google.com/file/d/1BO9fwX-3UmbAnQirNPhLraY4Sxlpvm-6/view?usp=sharing'
+
 type Props = {
     locale: Locale;
 };
@@ -49,15 +51,25 @@ const Hero = async ({ locale }: Props) => {
                                     {translation("hero.contact")} <Send size={18} />
                                 </Button>
                             </Link>
-                            <Button variant='secondary' className='gap-x-2'>
-                                {translation("hero.download")} <Download size={18} />
-                            </Button>
+                            <Link 
+                                href={cvUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Button variant='secondary' className='gap-x-2'>
+                                    {translation("hero.download")} <Download size={18} />
+                                </Button>
+                            </Link>
                         </div>
                         {/* socials */}
                         <Socials
                             containerStyles='flex gap-x-6 mx-auto xl:mx-0'
                             iconsStyles='text-foreground text-[22px] hover:text-primary transition-all'
                         />
+                        {/* <Socials
+                            containerStyles='flex gap-x-6 mx-auto xl:mx-0'
+                            iconsStyles='text-foreground text-[22px]'
+                        /> */}
                     </div>
                     {/* image */}
                     <div className='flex relative justify-center'>

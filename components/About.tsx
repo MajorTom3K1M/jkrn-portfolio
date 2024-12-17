@@ -194,7 +194,8 @@ const About = ({ locale }: Props) => {
                     <div className='hidden xl:flex flex-1 relative'>
                         <ProfileImg
                             // containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[443px] bg-no-repeat justify-self-center self-center relative'
-                            containerStyles='rounded-shape_light bg-[#FFEDDF] bg-no-repeat w-[505px] h-[443px] justify-self-center self-center relative'
+                            containerStyles='rounded-shape_light bg-[#FFEDDF] dark:bg-gray-700 bg-no-repeat w-[505px] h-[443px] justify-self-center self-center relative'
+                            // containerStyles='w-[505px] h-[443px] justify-self-center self-center relative'
                             imageStyles='rounded-shape w-[505px] max-h-[443px] object-cover justify-self-center self-center'
                             imgSrc='/about/profile.png'
                         />

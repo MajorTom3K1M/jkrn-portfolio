@@ -28,8 +28,7 @@ export default async function ContactPage({ params: { locale } }: ContactPagePro
                     {translation("contact.description")}
                 </p>
             </div>
-            {/* <div className='hidden xl:flex w-full bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat'></div> */}
-            {/* </div> */}
+
             <div className="mx-auto space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
                     <ContactCard icon={<Mail className="h-6 w-6" />} title="Email" content="jakkarin.mike@gmail.com" />
@@ -38,19 +37,9 @@ export default async function ContactPage({ params: { locale } }: ContactPagePro
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                     <ContactCard icon={<Github className="h-6 w-6" />} title="GitHub" content="github.com/MajorTom3K1M" link="https://github.com/MajorTom3K1M" />
                     <ContactCard icon={<Facebook className="h-6 w-6" />} title="Facebook" content="facebook.com/meteor.invader" link="https://www.facebook.com/meteor.invader" />
-                    <ContactCard icon={<Linkedin className="h-6 w-6" />} title="LinkedIn" content="linkedin.com/in/jakkarin" link="https://linkedin.com/in/jakkarin" />
+                    <ContactCard icon={<Linkedin className="h-6 w-6" />} title="LinkedIn" content="linkedin.com/in/jakkarin-m" link="https://linkedin.com/in/jakkarin-m" />
                 </div>
             </div>
-            {/* <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"> */}
-            {/* <ContactCard icon={<Mail className="h-6 w-6" />} title="Email" content="jakkarin.mike@gmail.com" />
-                <ContactCard icon={<Phone className="h-6 w-6" />} title="Phone" content="092-538-3629" /> */}
-
-            {/* <ContactCard icon={<MapPin className="h-6 w-6" />} title="Location" content="City, Country" /> */}
-
-            {/* <ContactCard icon={<Linkedin className="h-6 w-6" />} title="LinkedIn" content="linkedin.com/in/" link="https://linkedin.com/in/" />
-                <ContactCard icon={<Github className="h-6 w-6" />} title="GitHub" content="github.com/MajorTom3K1M" link="https://github.com/MajorTom3K1M" />
-                <ContactCard icon={<Facebook className="h-6 w-6" />} title="Facebook" content="facebook.com/meteor.invader" link="https://www.facebook.com/meteor.invader" /> */}
-            {/* </div> */}
         </div>
     )
 }
@@ -74,7 +63,7 @@ function ContactCard({ icon, title, content, link }: ContactCardProps) {
                             {content}
                         </a>
                     ) : (
-                        <p className="text-gray-600">{content}</p>
+                        <p className="text-muted-foreground">{content}</p>
                     )}
                 </div>
             </CardContent>

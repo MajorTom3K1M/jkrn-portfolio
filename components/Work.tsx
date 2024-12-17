@@ -30,7 +30,7 @@ const Work = ({ locale }: Props) => {
             category: ['next js', 'go', 'webrtc', 'websocket', 'tailwind css', 'postgresql', 'fullstack'],
             name: 'Discord Clone',
             description: translation('projects.discord-clone.description'),
-            link: '/',
+            link: 'https://www.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/discord-clone',
         },
         {
@@ -38,7 +38,7 @@ const Work = ({ locale }: Props) => {
             category: ['next js', 'c#', 'tailwind css', 'monogame'],
             name: 'WebCGP KMITL',
             description: translation('projects.webcgp-kmitl.description'),
-            link: '/',
+            link: 'https://cgp.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/WebCGP-KMITL',
         },
         {
@@ -46,7 +46,7 @@ const Work = ({ locale }: Props) => {
             category: ['rust', 'yew.rs', 'pubnub'],
             name: 'Wasm Chat Application',
             description: translation('projects.wasm-chat-application.description'),
-            link: '/',
+            link: 'http://wasm-chat.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/wasm-chat',
         },
         {
@@ -54,7 +54,7 @@ const Work = ({ locale }: Props) => {
             category: ['node js', 'line api', 'firebase'],
             name: 'Rosé Chatbot',
             description: translation('projects.rose-chatbot.description'),
-            link: '/',
+            link: 'http://line-bot.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/rose-chat-bot',
         },
         {
@@ -62,7 +62,7 @@ const Work = ({ locale }: Props) => {
             category: ['node js', 'jquery', 'express', 'handlebars'],
             name: 'DFS-BFS Application',
             description: translation('projects.dfs-bfs-application.description'),
-            link: '/',
+            link: 'https://dfs-bfs.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/dfs-bfs-application',
         }
     ];

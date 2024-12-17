@@ -43,7 +43,7 @@ const Projects = () => {
             category: ['next js', 'go', 'webrtc', 'websocket', 'tailwind css', 'postgresql', 'fullstack'],
             name: 'Discord Clone',
             description: translation('projects.discord-clone.description'),
-            link: '/',
+            link: 'https://www.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/discord-clone',
         },
         {
@@ -51,7 +51,7 @@ const Projects = () => {
             category: ['next js', 'c#', 'tailwind css', 'monogame'],
             name: 'WebCGP KMITL',
             description: translation('projects.webcgp-kmitl.description'),
-            link: '/',
+            link: 'https://cgp.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/WebCGP-KMITL',
         },
         {
@@ -59,7 +59,7 @@ const Projects = () => {
             category: ['rust', 'yew.rs', 'pubnub'],
             name: 'Wasm Chat Application',
             description: translation('projects.wasm-chat-application.description'),
-            link: '/',
+            link: 'http://wasm-chat.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/wasm-chat',
         },
         {
@@ -67,7 +67,7 @@ const Projects = () => {
             category: ['node js', 'line api', 'firebase'],
             name: 'Rosé Chatbot',
             description: translation('projects.rose-chatbot.description'),
-            link: '/',
+            link: 'http://line-bot.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/rose-chat-bot',
         },
         {
@@ -75,7 +75,7 @@ const Projects = () => {
             category: ['node js', 'jquery', 'express', 'handlebars'],
             name: 'DFS-BFS Application',
             description: translation('projects.dfs-bfs-application.description'),
-            link: '/',
+            link: 'https://dfs-bfs.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/dfs-bfs-application',
         },
         {
@@ -83,7 +83,7 @@ const Projects = () => {
             category: ['node js', 'socket io', 'express', 'html5', 'css', 'jquery', 'fullstack'],
             name: 'Node.js Chat Application',
             description: translation('projects.nodejs-chat-application.description'),
-            link: '/',
+            link: 'http://chat.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/node-chat-app',
         },
         {
@@ -99,7 +99,7 @@ const Projects = () => {
             category: ['react js', 'node js', 'express', 'socket io', 'mongodb', 'fullstack'],
             name: 'Draxit - A Dixit-Inspired Web Game',
             description: translation('projects.draxit.description'),
-            link: '/',
+            link: 'https://draxit.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/draxit',
         },
         {
@@ -107,7 +107,7 @@ const Projects = () => {
             category: ['node js', 'socket io', 'phaser3', 'javascript', 'fullstack'],
             name: 'Phaser3 WebRTC',
             description: translation('projects.phaser3-webrtc.description'),
-            link: '/',
+            link: 'https://phaser3.jkrn.me',
             github: 'https://github.com/MajorTom3K1M/phaser3-webrtc-poc',
         },
         {

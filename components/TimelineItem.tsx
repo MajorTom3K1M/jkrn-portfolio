@@ -31,7 +31,6 @@ function TimelineItem({ title, subtitle, date, detailedDate, description, tags, 
     const [isOpen, setIsOpen] = useState(false)
 
     const openTranscript = () => {
-        console.log('transcriptUrl', transcriptUrl)
         window.open(transcriptUrl, '_blank', 'noopener,noreferrer')
     }
 
