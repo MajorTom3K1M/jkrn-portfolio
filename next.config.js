@@ -1,5 +1,4 @@
-/** @type {import('next').NextConfig} */
-import path from "path";
+const path = require('path');
 
 const nextConfig = {
     webpack: (config, { isServer }) => {
@@ -8,4 +7,4 @@ const nextConfig = {
     },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
