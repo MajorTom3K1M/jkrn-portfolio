@@ -6,7 +6,6 @@ import Footer from '@/components/Footer';
 import Skills from '@/components/Skills';
 
 import { Locale } from '@/i18n';
-import { getTranslation, TranslationKey } from '@/lib/i18n/getTranslation';
 
 type Props = {
     params: {
@@ -18,12 +17,12 @@ export default async function Home({ params: { locale } }: Props) {
     return (
         <main>
             <Hero locale={locale} />
-            <About locale={locale} />
+            <About />
             <Skills locale={locale} />
             {/* <Services /> */}
             <Work locale={locale} />
             <Cta locale={locale} />
-            <Footer locale={locale} />
+            <Footer />
         </main>
     )
 }

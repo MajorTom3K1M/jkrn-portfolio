@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { cn } from '@/lib/utils';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { i18nConfig, Locale } from "@/i18n";
-import { I18NConfig } from "next/dist/server/config-shared";
 
 const redirectToLocale = (locale: Locale, pathname: string) => {
     if (!pathname) {

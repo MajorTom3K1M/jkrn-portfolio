@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter, X, Facebook } from 'lucide-react'
+import { Mail, Phone, Linkedin, Github, Facebook } from 'lucide-react'
 import { Card, CardContent } from "@/components/ui/card"
 import { getTranslation } from '@/lib/i18n/getTranslation'
 import { Locale } from '@/i18n';

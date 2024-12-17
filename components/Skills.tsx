@@ -2,12 +2,11 @@ import { Server, PanelsTopLeft, Hammer, BadgeCheck } from 'lucide-react';
 import {
     Card,
     CardContent,
-    CardDescription,
     CardHeader,
     CardTitle
 } from '@/components/ui/card';
 import { Locale } from '@/i18n';
-import { getTranslation, TranslationKey } from '@/lib/i18n/getTranslation';
+import { getTranslation } from '@/lib/i18n/getTranslation';
 
 type Props = {
     locale: Locale;
@@ -141,7 +140,7 @@ const Skills = async ({ locale }: Props) => {
                 {/* Grid items */}
                 <div className='grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8'>
                     {skillsData.map((item, index) => {
-                        const { icon, description, title, tools } = item;
+                        const { icon, title, tools } = item;
                         return (
                             <Card
                                 // className='w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative'

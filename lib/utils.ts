@@ -1,4 +1,4 @@
-import { i18nConfig, Locale } from "@/i18n";
+import { i18nConfig } from "@/i18n";
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 

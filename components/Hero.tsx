@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import { Download, Send } from 'lucide-react';
 import {
     RiBriefcase4Fill,
-    RiTeamFill,
     RiTodoFill,
     RiArrowDownSLine,
     RiCodeSSlashFill

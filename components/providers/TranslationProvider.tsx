@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
@@ -39,12 +40,12 @@ export const TranslationProvider = ({
     const translation = (key: string): string => {
         if (!translations) return key;
 
-        // Split the key into parts and traverse the object
+        
         const keys = key.split('.');
         let result: any = translations;
         for (const part of keys) {
             result = result?.[part];
-            if (result === undefined) return key; // Fallback to key if translation is not found
+            if (result === undefined) return key;
         }
         return typeof result === 'string' ? result : key;
     };

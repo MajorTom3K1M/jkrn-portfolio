@@ -1,13 +1,11 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Tabs, TabsList, TabsContent, TabsTrigger } from '@/components/ui/tabs';
 import ProjectCard from '@/components/ProjectCard';
 import { ChevronDown } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 import { useTranslation } from '@/components/providers/TranslationProvider';
-
-type FilterType = "all" | "react" | "next" | "fullstack" | "vue" | "angular" | "node" | "python"
 
 const additionalFilters = [
     'node js',
@@ -176,8 +174,7 @@ const Projects = () => {
         // ...Array.from(new Set(projectData.map((item) => item.category))),
     ];
 
-    const tabRef = useRef(null);
-    const [categories, setCategories] = useState(uniqueCategories);
+    const [categories] = useState(uniqueCategories);
     const [category, setCategory] = useState('all projects');
 
     const isAdditionalFilter = additionalFilters.some(filter => filter === category);

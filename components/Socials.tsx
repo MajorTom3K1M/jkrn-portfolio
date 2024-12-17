@@ -10,7 +10,6 @@ import {
 } from "react-icons/tb";
 
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
 
 interface SocialsProps {
     containerStyles: string;
@@ -64,7 +63,6 @@ const Socials = ({ containerStyles, iconsStyles }: SocialsProps) => {
                     //         // transition-all duration-300 group
                     //     `}
                     // >
-
                     // </Link>
                 );
             })}

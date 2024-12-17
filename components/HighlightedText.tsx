@@ -14,7 +14,7 @@ const HighlightedText = ({ text }: HighlightedTextProps) => {
                 if (node.name === 'highlight') {
                     return (
                         <span className="bg-primary/10 px-1 rounded">
-                            {node.children.map((child, index) => {
+                            {node.children.map((child) => {
                                 if (child instanceof Text) {
                                     return child.data; // Extract text data
                                 }
@@ -28,7 +28,7 @@ const HighlightedText = ({ text }: HighlightedTextProps) => {
                 } else if (node.name === 'focused') {
                     return (
                         <span className="text-primary font-normal">
-                            {node.children.map((child, index) => {
+                            {node.children.map((child) => {
                                 if (child instanceof Text) {
                                     return child.data; // Extract text data
                                 }

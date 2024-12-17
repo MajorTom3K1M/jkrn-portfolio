@@ -1,7 +1,6 @@
 'use client';
 import ProfileImg from '@/components/ProfileImg';
 import TimelineItem from '@/components/TimelineItem';
-import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import {
@@ -14,8 +13,6 @@ import {
     Briefcase,
 } from 'lucide-react';
 
-import { Locale } from '@/i18n';
-import { useState } from 'react';
 import { useTranslation } from './providers/TranslationProvider';
 
 interface Item {
@@ -41,49 +38,8 @@ interface Item {
     }>;
 };
 
-type Props = {
-    locale: Locale;
-};
 
-const skillData = [
-    {
-        title: 'skills',
-        data: [
-            {
-                name: 'HTML, CSS',
-            },
-            {
-                name: 'Front-end Development',
-            },
-            {
-                name: 'Javascript, PHP',
-            },
-            {
-                name: 'Back-end Development',
-            },
-        ],
-    },
-    {
-        title: 'tools',
-        data: [
-            {
-                imgPath: '/about/vscode.svg',
-            },
-            {
-                imgPath: '/about/figma.svg',
-            },
-            {
-                imgPath: '/about/notion.svg',
-            },
-            {
-                imgPath: '/about/wordpress.svg',
-            },
-        ],
-    },
-];
-
-
-const About = ({ locale }: Props) => {
+const About = () => {
     const { translation } = useTranslation();
 
     const getData = (arr: Item[], title: string): Item | undefined => {
