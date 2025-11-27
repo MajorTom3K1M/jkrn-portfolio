@@ -69,6 +69,22 @@
         "advanced": "ระดับสูง",
         "basic": "ระดับพื้นฐาน"
     },
+    "github": {
+        "title": "กิจกรรมบน GitHub",
+        "publicRepos": "รีโพซิทอรีสาธารณะ",
+        "followers": "ผู้ติดตาม",
+        "contributionTrends": "แนวโน้มการมีส่วนร่วม",
+        "bestYear": "ปีที่ดีที่สุด",
+        "thisYear": "ปีนี้",
+        "otherYears": "ปีอื่นๆ",
+        "contributions": "ครั้ง",
+        "topLanguages": "ภาษาที่ใช้มากที่สุด",
+        "yearlyContributions": "การมีส่วนร่วมรายปี",
+        "contributionsLabel": "จำนวนการมีส่วนร่วมต่อปี",
+        "totalYears": "ปีที่ติดตาม",
+        "best": "ดีที่สุด",
+        "current": "ปัจจุบัน"
+    },
     "timeline": {
         "clickForDetails": "คลิกเพื่อดูรายละเอียด",
         "detailedTimeframe": "ช่วงเวลาแบบละเอียด:",

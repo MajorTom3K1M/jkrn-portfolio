@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Work from '@/components/Work';
 import Footer from '@/components/Footer';
 import Skills from '@/components/Skills';
+import GitHubStats from '@/components/GitHubStats';
 
 import { Locale } from '@/i18n';
 
@@ -19,6 +20,7 @@ export default async function Home({ params: { locale } }: Props) {
             <Hero locale={locale} />
             <About />
             <Skills locale={locale} />
+            <GitHubStats locale={locale} />
             {/* <Services /> */}
             <Work locale={locale} />
             <Cta locale={locale} />

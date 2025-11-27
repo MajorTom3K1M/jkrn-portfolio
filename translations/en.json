@@ -69,6 +69,22 @@
         "advanced": "Advanced",
         "basic": "Basic"
     },
+    "github": {
+        "title": "GitHub Activity",
+        "publicRepos": "Public Repos",
+        "followers": "Followers",
+        "contributionTrends": "Yearly Contribution Trends",
+        "bestYear": "Best Year",
+        "thisYear": "This Year",
+        "otherYears": "Other Years",
+        "contributions": "contributions",
+        "topLanguages": "Top Languages",
+        "yearlyContributions": "Yearly Contributions",
+        "contributionsLabel": "Total contributions per year",
+        "totalYears": "Years Tracked",
+        "best": "Best",
+        "current": "Current"
+    },
     "timeline": {
         "clickForDetails": "Click for details",
         "detailedTimeframe": "Detailed Timeframe:",
